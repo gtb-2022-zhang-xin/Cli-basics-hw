@@ -1,0 +1,14 @@
+#!/bin/bash
+
+#Q1
+md5sum file.sh
+
+#Q2
+ diff file_1 file_2
+
+#6 method1
+awk '{sum+=$1} END {print sum}' file.sh
+
+#method 2
+cat file.sh | awk '{sum+=$1} END {print sum}
+
